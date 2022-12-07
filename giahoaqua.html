@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" id="2" placeholder="nhap loai qua">
+   <button onclick="tenhoaqua ()">xem gia</button>
+   <p id="123"></p>
+ <script>
+    function tenhoaqua () {
+        var g = document.getElementById('2').value;
+        var t;
+    switch(g) {
+    case 'mang cut' :
+    t= 50000;
+    break;
+    case 'oi' :
+    t= 20000;
+    break;
+    case 'dua hau' :
+    t= 20000;
+    break;
+    case 'tao' :
+    t= 30000;
+    break;
+    case 'xoai' :
+    t= 30000;
+    break;
+    case 'cam' :
+    t= 40000;
+    break;
+    case 'chom chom' :
+    t= 40000;
+    break;
+    default:
+    break;
+    }document.getElementById("123").innerHTML=
+    t + 'vnd/kg' ;
+ }
+ </script>
+</body>
+</html>
